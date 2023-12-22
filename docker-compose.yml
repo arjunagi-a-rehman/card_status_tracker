@@ -1,0 +1,10 @@
+services:
+  accounts:
+    image: "abdul12527/card_status_tracker1:v1"
+    container_name: card_status_tracker1-ms
+    ports:
+      - 8080:8080
+    deploy:
+      resources:
+        limits:
+          memory: 700m
